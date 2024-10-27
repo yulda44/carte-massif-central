@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5fad9112ffe05ce1d290427f3e8cec2a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5fad9112ffe05ce1d290427f3e8cec2a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5fad9112ffe05ce1d290427f3e8cec2a = L.map(
+                "map_5fad9112ffe05ce1d290427f3e8cec2a",
+                {
+                    center: [45.7797, 3.08628],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e745651e3f60c04e171c926ff987b007 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var marker_8b3852ac3835879281f245a6d6163e01 = L.marker(
+                [45.5733, 2.8081],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_7b61c6e863f58ae50bac249305ea8435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b3852ac3835879281f245a6d6163e01.setIcon(icon_7b61c6e863f58ae50bac249305ea8435);
+        
+    
+        var popup_8bf8177ffee1f2309f3c240176c16e68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f401546eadf69b2616da01f0cc2c242e = $(`<div id="html_f401546eadf69b2616da01f0cc2c242e" style="width: 100.0%; height: 100.0%;">Le Mont-Dore</div>`)[0];
+            popup_8bf8177ffee1f2309f3c240176c16e68.setContent(html_f401546eadf69b2616da01f0cc2c242e);
+        
+
+        marker_8b3852ac3835879281f245a6d6163e01.bindPopup(popup_8bf8177ffee1f2309f3c240176c16e68)
+        ;
+
+        
+    
+    
+            marker_8b3852ac3835879281f245a6d6163e01.bindTooltip(
+                `<div>
+                     Le Mont-Dore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc57e5cbc53f5d18a0cfa959dc5c407b = L.marker(
+                [45.5051, 2.8711],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_eb03fcf9cc3f5ba5676b099b6abdb1db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc57e5cbc53f5d18a0cfa959dc5c407b.setIcon(icon_eb03fcf9cc3f5ba5676b099b6abdb1db);
+        
+    
+        var popup_9a4ecc50110102d7c7962d57a876fd1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa6ec0407f66c9fdc5c9c82d24375ea7 = $(`<div id="html_aa6ec0407f66c9fdc5c9c82d24375ea7" style="width: 100.0%; height: 100.0%;">Super-Besse</div>`)[0];
+            popup_9a4ecc50110102d7c7962d57a876fd1b.setContent(html_aa6ec0407f66c9fdc5c9c82d24375ea7);
+        
+
+        marker_fc57e5cbc53f5d18a0cfa959dc5c407b.bindPopup(popup_9a4ecc50110102d7c7962d57a876fd1b)
+        ;
+
+        
+    
+    
+            marker_fc57e5cbc53f5d18a0cfa959dc5c407b.bindTooltip(
+                `<div>
+                     Super-Besse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd7c6ebcb0843f4324d649e1975a44f7 = L.marker(
+                [45.5114, 2.8189],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_4583afff2a088a4d8e0f99d523a64234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd7c6ebcb0843f4324d649e1975a44f7.setIcon(icon_4583afff2a088a4d8e0f99d523a64234);
+        
+    
+        var popup_3e165b0b725c5013fd4ea442e59b6d0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d6e976000ce5cb101f1d4470c87b2af = $(`<div id="html_0d6e976000ce5cb101f1d4470c87b2af" style="width: 100.0%; height: 100.0%;">Chastreix-Sancy</div>`)[0];
+            popup_3e165b0b725c5013fd4ea442e59b6d0e.setContent(html_0d6e976000ce5cb101f1d4470c87b2af);
+        
+
+        marker_dd7c6ebcb0843f4324d649e1975a44f7.bindPopup(popup_3e165b0b725c5013fd4ea442e59b6d0e)
+        ;
+
+        
+    
+    
+            marker_dd7c6ebcb0843f4324d649e1975a44f7.bindTooltip(
+                `<div>
+                     Chastreix-Sancy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a8dd44f69611eebb09b905d2680217f = L.marker(
+                [45.0688, 2.7324],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_15b8af34c21aeea19066d89f5e839f8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a8dd44f69611eebb09b905d2680217f.setIcon(icon_15b8af34c21aeea19066d89f5e839f8e);
+        
+    
+        var popup_d90d184747f6225b6c9b0fc0d046ecc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7403d111b8f3ab8d3093adb8b52f7b4d = $(`<div id="html_7403d111b8f3ab8d3093adb8b52f7b4d" style="width: 100.0%; height: 100.0%;">Le Lioran</div>`)[0];
+            popup_d90d184747f6225b6c9b0fc0d046ecc6.setContent(html_7403d111b8f3ab8d3093adb8b52f7b4d);
+        
+
+        marker_6a8dd44f69611eebb09b905d2680217f.bindPopup(popup_d90d184747f6225b6c9b0fc0d046ecc6)
+        ;
+
+        
+    
+    
+            marker_6a8dd44f69611eebb09b905d2680217f.bindTooltip(
+                `<div>
+                     Le Lioran
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_866290fd9f9d76be2358a48346910408 = L.marker(
+                [45.5664, 3.7459],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_70a28ffeba788015ca60fc919d01318d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_866290fd9f9d76be2358a48346910408.setIcon(icon_70a28ffeba788015ca60fc919d01318d);
+        
+    
+        var popup_5ca8a5ae670b3deccbac767eecf56322 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59ccbdb9e3962bcf49692d3402b19b46 = $(`<div id="html_59ccbdb9e3962bcf49692d3402b19b46" style="width: 100.0%; height: 100.0%;">Prabouré</div>`)[0];
+            popup_5ca8a5ae670b3deccbac767eecf56322.setContent(html_59ccbdb9e3962bcf49692d3402b19b46);
+        
+
+        marker_866290fd9f9d76be2358a48346910408.bindPopup(popup_5ca8a5ae670b3deccbac767eecf56322)
+        ;
+
+        
+    
+    
+            marker_866290fd9f9d76be2358a48346910408.bindTooltip(
+                `<div>
+                     Prabouré
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ca8e1746e486c7bb1248660864a153b = L.marker(
+                [46.1025, 3.7784],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_c2e7a4b99e0843c796f24cc756a68d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ca8e1746e486c7bb1248660864a153b.setIcon(icon_c2e7a4b99e0843c796f24cc756a68d0f);
+        
+    
+        var popup_3c3e09e0b65ed31097d84942021218b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b64796b9a0299b7c611011bf410fa70 = $(`<div id="html_6b64796b9a0299b7c611011bf410fa70" style="width: 100.0%; height: 100.0%;">La Loge des Gardes</div>`)[0];
+            popup_3c3e09e0b65ed31097d84942021218b8.setContent(html_6b64796b9a0299b7c611011bf410fa70);
+        
+
+        marker_8ca8e1746e486c7bb1248660864a153b.bindPopup(popup_3c3e09e0b65ed31097d84942021218b8)
+        ;
+
+        
+    
+    
+            marker_8ca8e1746e486c7bb1248660864a153b.bindTooltip(
+                `<div>
+                     La Loge des Gardes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30ed1142fe64bf93e24c6e942279ef70 = L.marker(
+                [44.9605, 4.1992],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_1afac0d9f244b77e1f8d9153175b6b14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_30ed1142fe64bf93e24c6e942279ef70.setIcon(icon_1afac0d9f244b77e1f8d9153175b6b14);
+        
+    
+        var popup_4018ed669da2982c1ca010db1f97052b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5962e39a784e1f7d1807ba8a720fe080 = $(`<div id="html_5962e39a784e1f7d1807ba8a720fe080" style="width: 100.0%; height: 100.0%;">Les Estables (Mont Mézenc)</div>`)[0];
+            popup_4018ed669da2982c1ca010db1f97052b.setContent(html_5962e39a784e1f7d1807ba8a720fe080);
+        
+
+        marker_30ed1142fe64bf93e24c6e942279ef70.bindPopup(popup_4018ed669da2982c1ca010db1f97052b)
+        ;
+
+        
+    
+    
+            marker_30ed1142fe64bf93e24c6e942279ef70.bindTooltip(
+                `<div>
+                     Les Estables (Mont Mézenc)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63dd4fdc30d5a6ccb92160cc222d2dd1 = L.marker(
+                [44.6221, 4.0629],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_1afc61814989b3f4a7726c17ca2ac7ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63dd4fdc30d5a6ccb92160cc222d2dd1.setIcon(icon_1afc61814989b3f4a7726c17ca2ac7ba);
+        
+    
+        var popup_fff9375f574b3ed37e8528445761ee48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc29e948f7b794a05f5e462567d899c5 = $(`<div id="html_fc29e948f7b794a05f5e462567d899c5" style="width: 100.0%; height: 100.0%;">La Croix de Bauzon</div>`)[0];
+            popup_fff9375f574b3ed37e8528445761ee48.setContent(html_fc29e948f7b794a05f5e462567d899c5);
+        
+
+        marker_63dd4fdc30d5a6ccb92160cc222d2dd1.bindPopup(popup_fff9375f574b3ed37e8528445761ee48)
+        ;
+
+        
+    
+    
+            marker_63dd4fdc30d5a6ccb92160cc222d2dd1.bindTooltip(
+                `<div>
+                     La Croix de Bauzon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_209ebbf418356450d9abf8667c067f02 = L.marker(
+                [44.7182, 4.1152],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_7d23fb925d8def23236be2b846ed9092 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_209ebbf418356450d9abf8667c067f02.setIcon(icon_7d23fb925d8def23236be2b846ed9092);
+        
+    
+        var popup_57a47ae0e420ba217f93cdd708136edb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0421ee7556868091f7001fcba0e0680f = $(`<div id="html_0421ee7556868091f7001fcba0e0680f" style="width: 100.0%; height: 100.0%;">La Chavade - Bel-Air</div>`)[0];
+            popup_57a47ae0e420ba217f93cdd708136edb.setContent(html_0421ee7556868091f7001fcba0e0680f);
+        
+
+        marker_209ebbf418356450d9abf8667c067f02.bindPopup(popup_57a47ae0e420ba217f93cdd708136edb)
+        ;
+
+        
+    
+    
+            marker_209ebbf418356450d9abf8667c067f02.bindTooltip(
+                `<div>
+                     La Chavade - Bel-Air
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a30fe9d641313dcf6b8ab16540e023c6 = L.marker(
+                [45.6888, 3.7582],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_5063065733faf7df746cd9f03936bfe5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a30fe9d641313dcf6b8ab16540e023c6.setIcon(icon_5063065733faf7df746cd9f03936bfe5);
+        
+    
+        var popup_c67ea8aa33118456070f5d90d68da471 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dc6c8422d8291b8f1271f3e4c07fe1e = $(`<div id="html_6dc6c8422d8291b8f1271f3e4c07fe1e" style="width: 100.0%; height: 100.0%;">Chalmazel</div>`)[0];
+            popup_c67ea8aa33118456070f5d90d68da471.setContent(html_6dc6c8422d8291b8f1271f3e4c07fe1e);
+        
+
+        marker_a30fe9d641313dcf6b8ab16540e023c6.bindPopup(popup_c67ea8aa33118456070f5d90d68da471)
+        ;
+
+        
+    
+    
+            marker_a30fe9d641313dcf6b8ab16540e023c6.bindTooltip(
+                `<div>
+                     Chalmazel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c847948043cfe9d05fdeb45b014f4ca = L.marker(
+                [45.7797, 3.08628],
+                {}
+            ).addTo(map_5fad9112ffe05ce1d290427f3e8cec2a);
+        
+    
+            var icon_1767ff012f7d13272f460e2a2d75f0b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c847948043cfe9d05fdeb45b014f4ca.setIcon(icon_1767ff012f7d13272f460e2a2d75f0b3);
+        
+    
+        var popup_f8dcf738643fd3449b0e94cb2ff108e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d841426d8305fdd2cd42df622c23ad76 = $(`<div id="html_d841426d8305fdd2cd42df622c23ad76" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand</div>`)[0];
+            popup_f8dcf738643fd3449b0e94cb2ff108e6.setContent(html_d841426d8305fdd2cd42df622c23ad76);
+        
+
+        marker_1c847948043cfe9d05fdeb45b014f4ca.bindPopup(popup_f8dcf738643fd3449b0e94cb2ff108e6)
+        ;
+
+        
+    
+    
+            marker_1c847948043cfe9d05fdeb45b014f4ca.bindTooltip(
+                `<div>
+                     Clermont-Ferrand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
